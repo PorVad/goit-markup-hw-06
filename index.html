@@ -7,15 +7,16 @@
     <title>WebStudio</title>
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-    <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap'
+        rel='stylesheet' />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header_container container">
+        <div class="container header_container">
             <nav class="header_nav">
-                <a href="./index.html" class="logo">Web<span class="logo_p">Studio</span></a>
+                <a href="./index.html" class="logo header_logo">Web<span class="logo_p">Studio</span></a>
                 <ul class="header_list">
                     <li><a href="./index.html" class="header_list_a current">Studio</a></li>
                     <li><a href="" class="header_list_a">Portfolio</a></li>
@@ -28,6 +29,11 @@
                     <li><a href="tel:+110001111111" class="address_contact">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button class="burger_btn" type="button">
+                <svg class="burger_icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -37,7 +43,7 @@
                 <button type="button" class="order_service_btn">Order Service</button>
             </div>
         </section>
-        <section class="features">
+        <section class="features hidden">
             <div class="container">
                 <h2 class="visually-hidden">Our Features</h2>
                 <ul class="features_list">
@@ -48,7 +54,8 @@
                             </svg>
                         </div>
                         <h3 class="features_list_titre">Strategy</h3>
-                        <p class="features_skil_text">Our goal is to identify the business problem and find a creative solution.</p>
+                        <p class="features_skil_text">Our goal is to identify the business problem and find a creative
+                            solution.</p>
                     </li>
                     <li class="features_skil">
                         <div class="features-container-icon">
@@ -57,7 +64,8 @@
                             </svg>
                         </div>
                         <h3 class="features_list_titre">Punctuality</h3>
-                        <p class="features_skil_text">Delivering key messages to the brand's audience swiftly and efficiently.</p>
+                        <p class="features_skil_text">Delivering key messages to the brand's audience swiftly and
+                            efficiently.</p>
                     </li>
                     <li class="features_skil">
                         <div class="features-container-icon">
@@ -66,7 +74,8 @@
                             </svg>
                         </div>
                         <h3 class="features_list_titre">Diligence</h3>
-                        <p class="features_skil_text">Researching and minimizing risks for digital growth opportunities.</p>
+                        <p class="features_skil_text">Researching and minimizing risks for digital growth opportunities.
+                        </p>
                     </li>
                     <li class="features_skil">
                         <div class="features-container-icon">
@@ -75,12 +84,13 @@
                             </svg>
                         </div>
                         <h3 class="features_list_titre">Technologies</h3>
-                        <p class="features_skil_text">We focus on digital experiences with innovative problem-solving.</p>
+                        <p class="features_skil_text">We focus on digital experiences with innovative problem-solving.
+                        </p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="team">
+        <section class="team hidden">
             <div class="container">
                 <h2 class="features_titre">Our Team</h2>
                 <ul class="team_list">
@@ -235,7 +245,7 @@
                 </ul>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio hidden">
             <div class="container">
                 <h2 class="portfolio_titre">Our Portfolio</h2>
                 <ul class="portfolio_list">
@@ -243,7 +253,8 @@
                         <div class="portfolio_img">
                             <img src="./images/Portfolio/BankingApp.jpg" alt="Banking App" width="360">
                             <p class="img_text">
-                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+                                App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
                             </p>
                         </div>
@@ -256,7 +267,8 @@
                         <div class="portfolio_img">
                             <img src="./images/Portfolio/CashlessPayment.jpg" alt="Cashless Payment" width="360">
                             <p class="img_text">
-                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+                                App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App
                             </p>
@@ -270,7 +282,8 @@
                         <div class="portfolio_img">
                             <img src="./images/Portfolio/MaditationApp.jpg" alt="Meditation App" width="360">
                             <p class="img_text">
-                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+                                App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App
                             </p>
@@ -284,7 +297,8 @@
                         <div class="portfolio_img">
                             <img src="./images/Portfolio/TaxiService.jpg" alt="Taxi Service" width="360">
                             <p class="img_text">
-                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+                                App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App
                             </p>
@@ -296,9 +310,11 @@
                     </li>
                     <li class="portfolio_item">
                         <div class="portfolio_img">
-                            <img src="./images/Portfolio/ScreenIllustrations.jpg" alt="Screen Illustrations" width="360">
+                            <img src="./images/Portfolio/ScreenIllustrations.jpg" alt="Screen Illustrations"
+                                width="360">
                             <p class="img_text">
-                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+                                App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App
                             </p>
@@ -312,7 +328,8 @@
                         <div class="portfolio_img">
                             <img src="./images/Portfolio/OnlineCourses.jpg" alt="Online Courses" width="360">
                             <p class="img_text">
-                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+                                App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App
                             </p>
@@ -326,11 +343,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer_content">
             <div class="footer_logo_text">
                 <a href="./index.html" class="logo_footer">Web<span class="logo_p_footer">Studio</span></a>
-                <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing
+                    & growth solutions.</p>
             </div>
             <div class="social_container">
                 <p class="social_text">Social media</p>
@@ -383,14 +401,14 @@
             </div>
         </div>
     </footer>
-    <div class="modal_container">
+    <div class="modal_container hidden">
         <div class="modal">
             <button class="modal_btn" type="button">
                 <svg class="close_icon" width="8" height="8">
                     <use href="./images/modal-icons.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
             </button>
-            <p class="modal_container_text"></p>
+            <p class="modal_container_text">Leave your contacts and we will call you back</p>
             <form action="#">
                 <div class="form_area">
                     <label class="form_label" for="user-name">Name</label>
@@ -404,7 +422,7 @@
                 <div class="form_area">
                     <label class="form_label" for="modal-phone">Phone</label>
                     <div class="user_info">
-                        <input class="user_input" id="modal-phone" name="user-phone" type="text">
+                        <input class="user_input" id="modal-phone" name="user-phone" type="tel">
                         <svg class="user_input_icon" width="18" height="24">
                             <use href="./images/modal-icons.svg#icon-phone-black-18dp-1"></use>
                         </svg>
@@ -413,7 +431,7 @@
                 <div class="form_area">
                     <label class="form_label" for="modal-email">Email</label>
                     <div class="user_info">
-                        <input class="user_input" id="modal-email" name="user-name" type="text">
+                        <input class="user_input" id="modal-email" name="user-name" type="email">
                         <svg class="user_input_icon" width="18" height="24">
                             <use href="./images/modal-icons.svg#icon-email-black-18dp-1"></use>
                         </svg>
@@ -425,11 +443,12 @@
                         placeholder="Text input"></textarea>
                 </div>
                 <div class="form_privacy_area">
-                    <input class="user_privacy visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true">
+                    <input class="user_privacy visually-hidden" id="user-privacy" name="user-privacy" type="checkbox"
+                        value="true">
                     <label class="privacy_label" for="user-privacy">
                         <span class="privacy_span">
                             <svg class="privacy_icon" width="10" height="8">
-                                <use href="./images/modal-icons.svg#icon-Checkbox"></use>
+                                <use href="./images/modal-icons.svg#icon-check"></use>
                             </svg>
                         </span>
                         I accept the terms and conditions of the
