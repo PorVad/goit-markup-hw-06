@@ -255,6 +255,56 @@ button{
     }
 }
 
+/* mobile menu */
+
+.mobie_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobie_menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile_menu_container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+}
+
+.mobile_menu_close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.mobie_menu_nav{
+    margin-bottom: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .mobie_menu{
+        display: none;
+    }
+}
+
+/* first section */
+
 .order_service {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-background.jpg);
     background-repeat: no-repeat;
@@ -332,5 +382,187 @@ button{
     
     .order_service>div {
         gap: 48px;
+    }
+}
+
+/* second section */
+
+.features{
+    padding: 96px 0;
+}
+
+.features_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: 0;
+    padding: 0;
+}
+
+.features_skil {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.features-container-icon {
+    display: none;
+}
+
+.features_skil_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.features_list_titre {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .features_skil {
+        flex-basis: calc((100% - 72px) / 2);
+    }
+
+    .features_list_titre {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features{
+        padding: 120px 0;
+    }
+
+    .features_list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .features_skil {
+        font-size: 20px;
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .features-container-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+    }
+}
+
+/* third section */
+
+.team {
+    padding: 96px 0;
+    background-color: #f4f4fd;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.team_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin-top: 72px;
+}
+
+.team_people {
+    background-color: #FFFFFF;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team_people_container {
+    padding: 32px 0;
+}
+
+.team_list_titre {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.team_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+.socialmedias {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+.socialmedia_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.socialmedia_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socialmedia_link:hover,
+.socialmedia_link:focus {
+    background-color: #404BBF;
+}
+
+.icon {
+    fill: var(--icon-white-color);
+}
+
+@media screen and (min-width: 768px) {
+    .team_list {
+        gap: 24px;
+    }
+
+    .team_people {
+        flex-basis: calc((100% - 72px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team_list {
+        gap: 24px;
+    }
+
+    .team_people {
+        flex-basis: calc((100% - 72px) / 4);
     }
 }
