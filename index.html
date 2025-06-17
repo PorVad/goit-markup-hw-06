@@ -35,7 +35,7 @@
                 </svg>
             </button>
         </div>
-        <div class="mobie_menu">
+        <div class="mobie_menu is-open">
             <div class="container mobile_menu_container">
                 <button class="mobile_menu_close" type="button">
                     <svg class="close_icon" width="8" height="8">
@@ -43,18 +43,48 @@
                     </svg>
                 </button>
                 <nav class="mobie_menu_nav">
-                    <ul class="">
-                        <li><a href="./index.html" class="">Studio</a></li>
-                        <li><a href="" class="">Portfolio</a></li>
-                        <li><a href="" class="">Contacts</a></li>
+                    <ul class="mobie_menu_nav_list">
+                        <li><a href="./index.html" class="mobie_menu_nav_list_item_logo">Studio</a></li>
+                        <li><a href="" class="mobie_menu_nav_list_item">Portfolio</a></li>
+                        <li><a href="" class="mobie_menu_nav_list_item">Contacts</a></li>
                     </ul>
                 </nav>
                 <address class="mobie_menu_address">
-                    <ul class="">
-                        <li><a href="mailto:info@devstudio.com" class="">info@devstudio.com</a></li>
-                        <li><a href="tel:+110001111111" class="">+11 (000) 111-11-11</a></li>
+                    <ul class="mobie_menu_address_list">
+                        <li><a href="mailto:info@devstudio.com" class="mobie_menu_address_list_item">info@devstudio.com</a></li>
+                        <li><a href="tel:+110001111111" class="mobie_menu_address_list_item">+11 (000) 111-11-11</a></li>
                     </ul>
-                    </address>
+                </address>
+                <ul class="mobie_menu_socialmedias">
+                    <li class="socialmedia_icon">
+                        <a class="socialmedia_link" href="">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socialmedia_icon">
+                        <a class="socialmedia_link" href="">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socialmedia_icon">
+                        <a class="socialmedia_link" href="">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socialmedia_icon">
+                        <a class="socialmedia_link" href="">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -267,7 +297,7 @@
                 </ul>
             </div>
         </section>
-        <section class="portfolio hidden">
+        <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio_titre">Our Portfolio</h2>
                 <ul class="portfolio_list">
@@ -365,7 +395,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer hidden">
+    <footer class="footer">
         <div class="footer_content">
             <div class="footer_logo_text">
                 <a href="./index.html" class="logo_footer">Web<span class="logo_p_footer">Studio</span></a>
@@ -423,7 +453,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal_container hidden">
+    <div class="modal_container">
         <div class="modal">
             <button class="modal_btn" type="button">
                 <svg class="close_icon" width="8" height="8">
