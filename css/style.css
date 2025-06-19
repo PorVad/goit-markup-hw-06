@@ -781,6 +781,10 @@ button{
     color: #4d5ae5;
 }
 
+.logo_p_footer{
+    color: #F4F4FD;
+}
+
 .social_container{
     display: flex;
     flex-direction: column;
@@ -844,7 +848,7 @@ button{
 }
 
 .input_e-mail {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -909,6 +913,10 @@ input::placeholder {
     .form {
         flex-direction: row;
         gap: 24px;
+    }
+
+    .input_e-mail{
+        width: 264px;
     }
 }
 
